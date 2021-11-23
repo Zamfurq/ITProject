@@ -99,26 +99,6 @@ public class HuffmanDecoding {
     String msg = decode(newCodes, message);
     System.out.println(msg);
   }
-  static char[] removeDuplicate(char[] array){
-    String newArray = "";
-    for(int i = 0;i < array.length;i++) {
-      if(newArray.indexOf(array[i]) == -1) {
-        newArray += array[i];
-      }
-    }
-    return newArray.toCharArray();
-  }
-
-  static int countChar(String msg, char c){
-    int count = 0;
-    for(int i=0;i<msg.length();i++){
-      if(msg.charAt(i) == c){
-        count++;
-      }
-    }
-    return count;
-  }
-
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the character (should be different):");
