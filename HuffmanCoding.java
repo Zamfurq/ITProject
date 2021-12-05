@@ -7,10 +7,10 @@ public class HuffmanCoding{
         System.out.println("1: for encoding, 2: for decoding");
         int input = sc.nextInt();
         if(input == 1){
-            HuffmanEncoding.main(args);;
+            HuffmanEncoding.main(args);
         }
         else if(input == 2){
-            HuffmanDecoding.main(args);;
+            HuffmanDecoding.main(args);
         }
         else {
             System.out.println("Sorry, try again");
